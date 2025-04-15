@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Team meeting minutes for Pomodoro Timer project" />
+    <title>Pomodoro Timer - Brainstorm Meeting</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pomodoro Timer - First Brainstorm</h1>
+      <nav>
+        <a href="#attendance">Attendance</a> |
+        <a href="#agenda">Agenda</a> |
+        <a href="#recordings">Media</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Meeting Topic: Brainstorming</h2>
+        <h3>Date: April 14, 2025</h3>
+      </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li><strong>Alex</strong> (Team Lead)</li>
+          <li><em>Briana</em> (Frontend)</li>
+          <li>Chris (Backend)</li>
+          <li>Dana (Notetaker)</li>
+        </ul>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review last week’s progress</li>
+          <li>Brainstorm Pomodoro features</li>
+          <li>Assign next tasks</li>
+        </ol>
+
+        <h3>Unfinished Business</h3>
+        <ul>
+          <li>Confirm final design</li>
+        </ul>
+
+        <h3>New Business</h3>
+        <ul>
+          <li>Implement audio alert feature</li>
+          <li>Create design features for timer</li>
+        </ul>
+
+        <h3>Comments / Concerns</h3>
+        <p>Briana: “How should we handle dark mode?”</p>
+        <p>Chris: “We need to double-check local storage limits.”</p>
+      </section>
+
+      <section id="recordings">
+        <h2>Meeting Media</h2>
+        <img src="diagram photo.webp" alt="Wireframe drawn on whiteboard" />
+        <audio controls>
+          <source src="IMG_2389.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <br />
+        <video width="320" height="240" controls>
+          <source src="IMG_2389.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Random Team Form</h2>
+        <form>
+          <fieldset>
+            <legend>Join Our Pomodoro Test Group</legend>
+
+            <label>Name: <input type="text" name="name" required /></label><br />
+            <label>Email: <input type="text" name="email" /></label><br />
+
+            <label>Date Available:
+              <input type="date" name="date" />
+            </label><br />
+
+            <p>Which features would you test?</p>
+            <label><input type="checkbox" name="feature" value="timer" /> Timer</label><br />
+            <label><input type="checkbox" name="feature" value="notifications" /> Notifications</label><br />
+
+            <p>Preferred Platform:</p>
+            <label><input type="radio" name="platform" value="web" /> Web</label>
+            <label><input type="radio" name="platform" value="mobile" /> Mobile</label><br />
+
+            <label for="feedback">Additional comments:</label><br />
+            <textarea id="feedback" rows="4" cols="40"></textarea><br />
+
+            <label for="browsers">Favorite Browser:</label>
+            <input list="browsers" name="browser" id="browser" />
+            <datalist id="browsers">
+              <option value="Chrome" />
+              <option value="Firefox" />
+              <option value="Safari" />
+              <option value="Edge" />
+            </datalist><br />
+
+            <label for="role">Your role:</label>
+            <select name="role" id="role">
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+              <option value="tester">Tester</option>
+            </select><br />
+
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <details>
+          <summary>For a bonus Pomodoro tip click here!</summary>
+          <p>Use the 25-5 rule and don't forget to take breaks in between!</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Team Pomodoro | <span>CS110 Lab 2</span></p>
+    </footer>
+  </body>
+</html>
