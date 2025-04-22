@@ -1,0 +1,6 @@
+/* Apply background and font color to body */
+body {
+    background-color: hsl(212, 68%, 78%);  /* soft blue background */
+    color: #333333;  
+    font-family: Arial, sans-serif;
+  }
