@@ -41,7 +41,7 @@ section {
   
   /* Use named color + color-mix */
   footer {
-    background-color: color-mix(in srgb, rgb(147, 37, 112) 70%, white);
+    background-color: #d699b6;
     text-align: center;
     padding: 1rem;
   }
