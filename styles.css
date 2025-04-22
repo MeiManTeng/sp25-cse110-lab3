@@ -1,0 +1,196 @@
+/* Apply background and font color to body */
+body {
+    background-color: hsl(212, 68%, 78%);  /* soft blue background */
+    color: #333333;  
+    font-family: 'Chewy', cursive;
+  }
+
+/*Box Model Styling */
+
+/* Apply margin and padding to main sections */
+section {
+    margin-top: 1em;         /* longhand margin */
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+  
+    padding: 10px 15px 10px 15px; /* shorthand padding */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Auto margin for centering */
+  main {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Colors and Variables */
+
+/* Define a CSS variable with fallback */
+:root {
+    --main-accent: color(display-p3 0.8 0.4 0.2);
+    --main-accent-fallback: rgb(112, 42, 159);
+  }
+  
+  h1, h2 {
+    color: var(--main-accent, var(--main-accent-fallback)); /* fallback usage */
+  }
+  
+  /* Use named color + color-mix */
+  footer {
+    background-color: color-mix(in srgb, rgb(147, 37, 112) 70%, white);
+    text-align: center;
+    padding: 1rem;
+  }
+
+/* Display, Positioning, and Pseudo-classes */
+
+/* Display types */
+nav {
+    display: inline-block;
+  }
+  
+  form {
+    display: block;
+  }
+  
+  /* Sizing */
+  img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    min-width: 100px;
+  }
+  
+  /* Positioning */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #c1bae7;
+    z-index: 10;
+  }
+  
+  footer {
+    position: relative;
+  }
+  
+  /* Pseudo-classes */
+  a:hover {
+    color: teal;
+    text-decoration: underline;
+  }
+  
+  button:active {
+    background-color: hsl(0, 50%, 70%);
+  }
+
+
+  /* Flexbox, Grid, and Media Queries */
+
+/* Flexbox layout */
+#agenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Add children to test flex */
+  #agenda h3,
+  #agenda ul,
+  #agenda ol {
+    flex: 1 1 30%;
+  }
+  
+  /* Grid layout */
+  #recordings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #agenda {
+      flex-direction: column;
+    }
+  
+    #recordings {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Selectors, Combinators, and Nesting */
+
+/* Class selector */
+.highlight {
+    background-color: #ffffcc;
+  }
+  
+  /* ID selector */
+  #recordings {
+    border: 2px dashed #aaa;
+  }
+  
+  /* Universal selector */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Attribute selector */
+  input[type="text"] {
+    border: 1px solid #999;
+  }
+  
+  /* Selector list */
+  h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* Combinators */
+  section p {
+    font-style: italic; /* Descendant */
+  }
+  
+  section > ul {
+    color: teal; /* Child */
+  }
+  
+  h2 ~ p {
+    background-color: #8f97e1; /* General sibling */
+  }
+  
+  h2 + p {
+    color: orange; /* Adjacent sibling */
+  }
+  
+  /* Combined selector */
+  p.highlight {
+    font-size: 1.2em;
+  }
+  
+  /* New selector: :has() */
+  section:has(img) {
+    border: 2px solid limegreen;
+  }
+  
+  /* Nested selector (requires SCSS-style syntax in actual preprocessor, but we’ll simulate it) */
+  nav ul li {
+    font-style: italic;
+  }
+  
