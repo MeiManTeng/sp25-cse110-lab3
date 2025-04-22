@@ -2,5 +2,27 @@
 body {
     background-color: hsl(212, 68%, 78%);  /* soft blue background */
     color: #333333;  
-    font-family: Arial, sans-serif;
+    font-family: 'Chewy', cursive;
+  }
+
+/*Box Model Styling */
+
+/* Apply margin and padding to main sections */
+section {
+    margin-top: 1em;         /* longhand margin */
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+  
+    padding: 10px 15px 10px 15px; /* shorthand padding */
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Auto margin for centering */
+  main {
+    width: 80%;
+    margin: auto;
   }
